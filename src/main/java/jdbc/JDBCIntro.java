@@ -8,7 +8,11 @@ import java.util.ArrayList;
 
 public class JDBCIntro {
 
-    public static void main(String [] args) throws SQLException {
+    public static void main(String [] args) throws SQLException  {
+        deleteDemo();
+    }
+
+    public static void deleteDemo() throws SQLException{
         Connection connection = null;
         PreparedStatement statement = null;
 
@@ -29,8 +33,7 @@ public class JDBCIntro {
             connection.close();
         }
     }
-
-    public void updateDemo() throws SQLException{
+    public static void updateDemo() throws SQLException{
         Connection connection = null;
         PreparedStatement statement = null;
 
@@ -51,7 +54,7 @@ public class JDBCIntro {
             connection.close();
         }
     }
-    public void insertDemo() throws SQLException{
+    public static void insertDemo() throws SQLException{
         Connection connection = null;
         PreparedStatement statement = null;
 
@@ -70,8 +73,7 @@ public class JDBCIntro {
             connection.close();
         }
     }
-
-    public void selectDemo() throws SQLException{
+    public static void selectDemo() throws SQLException{
         Connection connection = null;
         Statement statement = null;
         ResultSet resultSet = null;
