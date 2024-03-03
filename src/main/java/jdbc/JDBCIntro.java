@@ -9,6 +9,9 @@ import java.util.ArrayList;
 public class JDBCIntro {
 
     public static void main(String [] args) throws SQLException  {
+        selectDemo();
+        insertDemo();
+        updateDemo();
         deleteDemo();
     }
 
